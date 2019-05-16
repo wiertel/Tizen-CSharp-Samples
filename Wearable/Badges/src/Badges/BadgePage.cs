@@ -1,5 +1,4 @@
-﻿
-//Copyright 2018 Samsung Electronics Co., Ltd
+﻿//Copyright 2018 Samsung Electronics Co., Ltd
 //
 //Licensed under the Apache License, Version 2.0 (the "License");
 //you may not use this file except in compliance with the License.
@@ -24,7 +23,7 @@ using Application = Tizen.Applications.Application;
 namespace Badges
 {
     /// <summary>
-    /// Page class for main screen of the application.
+    /// The class of the badge page screen of the application.
     /// </summary>
     public class BadgePage : CirclePage, IRotaryEventReceiver
     {
@@ -34,7 +33,7 @@ namespace Badges
         private PopupEntry popupEntry;
 
         /// <summary>
-        /// ApplicationId of this application.
+        /// ApplicationId of this (current) application.
         /// </summary>
         private readonly string applicationId;
 
@@ -44,7 +43,7 @@ namespace Badges
         private int badgeValue;
 
         /// <summary>
-        /// Value to which badge count will be set.
+        /// Selected badge count.
         /// </summary>
         public int BadgeValue
         {
@@ -200,7 +199,7 @@ namespace Badges
         }
 
         /// <summary>
-        /// This function handles RotaryEvent.
+        /// Handles RotaryEvent to change badge value.
         /// </summary>
         /// <param name="args"> Rotary event arguments </param>
         public void Rotate(RotaryEventArgs args)
